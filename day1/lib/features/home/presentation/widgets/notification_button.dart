@@ -25,19 +25,13 @@ class NotificationButton extends StatelessWidget {
           ),
         ),
       ),
-      child: Material(color: Colors.transparent, child: _buildInkWell()),
-    );
-  }
-
-  Widget _buildInkWell() {
-    return InkWell(
-      customBorder: const CircleBorder(),
-      onTap: onPressed ?? () {},
-      child: const Icon(
+      child:const Icon(
         Icons.notifications_none_rounded,
         size: AppSpacing.iconSize,
         color: AppColors.textPrimary,
       ),
     );
   }
+
+
 }

@@ -36,7 +36,7 @@ class HomeHeader extends StatelessWidget {
   Widget _buildAvatar() {
     return ClipOval(
       child: Image.asset(
-        'assets/images/avatar.png',
+        'assets/images/Eagle.jpg',
         width: AppSpacing.avatarSize,
         height: AppSpacing.avatarSize,
         fit: BoxFit.cover,
