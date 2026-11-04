@@ -32,10 +32,24 @@ class AppSpacing {
   /// Notification bell icon size (20px).
   static const double iconSize = 20.0;
 
+  /// Bolt icon size for calorie title (18px).
+  static const double boltIconSize = 18.0;
+
   /// Light border outline width (1px).
   static const double borderWidth = 1.0;
+
+  /// Calorie card corner radius (24px).
+  static const double cardRadius = 24.0;
+
+  /// Calorie card internal padding (20px).
+  static const double cardPadding = 20.0;
+
+  /// Calorie progress ring diameter (100px).
+  static const double ringSize = 100.0;
+
+  /// Calorie progress ring stroke thickness (8px).
+  static const double ringStrokeWidth = 8.0;
 
   /// Max mobile device viewport width for web/desktop layout (390px).
   static const double maxPhoneWidth = 390.0;
 }
-

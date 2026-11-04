@@ -21,5 +21,10 @@ class AppColors {
 
   /// Light border color for outlines and dividers (#E6E6E6).
   static const Color borderLight = Color(0xFFE6E6E6);
-}
 
+  /// Very light blue tint background for the calorie card (#EAF4F7).
+  static const Color calorieCardBackground = Color(0xFFEAF4F7);
+
+  /// Light track color behind the calorie ring progress arc (#D3E3E9).
+  static const Color ringTrack = Color(0xFFD3E3E9);
+}
