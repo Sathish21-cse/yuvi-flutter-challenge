@@ -70,6 +70,7 @@ class MacroCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: [
         Text(label, style: AppTextStyles.macroLabel),
         const SizedBox(height: AppSpacing.gap2),

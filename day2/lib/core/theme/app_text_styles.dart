@@ -69,6 +69,7 @@ class AppTextStyles {
   static const TextStyle macroLabel = TextStyle(
     fontFamily: fontFamily,
     fontSize: 12.0,
+    height: 1.1,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,
   );
@@ -77,6 +78,7 @@ class AppTextStyles {
   static const TextStyle macroValue = TextStyle(
     fontFamily: fontFamily,
     fontSize: 14.0,
+    height: 1.1,
     fontWeight: FontWeight.w500,
     color: AppColors.textPrimary,
   );

@@ -28,14 +28,14 @@ class AppColors {
   /// Light track color behind the calorie ring progress arc (#D3E3E9).
   static const Color ringTrack = Color(0xFFD3E3E9);
 
-  /// Light peach tint background for carbs icon circle (#FFF0E6).
-  static const Color carbsTint = Color(0xFFFFF0E6);
+  /// Exact peach tint background for carbs icon circle from reference image (#FFF0DE).
+  static const Color carbsTint = Color(0xFFFFF0DE);
 
-  /// Light green tint background for protein icon circle (#EAF7EE).
-  static const Color proteinTint = Color(0xFFEAF7EE);
+  /// Exact light green tint background for protein icon circle from reference image (#E5FFDD).
+  static const Color proteinTint = Color(0xFFE5FFDD);
 
-  /// Light grey tint background for fat icon circle (#F2F2F2).
-  static const Color fatTint = Color(0xFFF2F2F2);
+  /// Exact light grey-lavender tint background for fat icon circle from reference image (#EBECF0).
+  static const Color fatTint = Color(0xFFEBECF0);
 
   /// Light grey decorative line under macro label (#E6E6E6).
   static const Color macroLine = Color(0xFFE6E6E6);
