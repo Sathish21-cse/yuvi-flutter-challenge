@@ -51,4 +51,25 @@ class AppColors {
 
   /// Background color for calendar navigation arrow buttons (#F3F3F3).
   static const Color arrowButtonBackground = Color(0xFFF3F3F3);
+
+  /// Breakfast card background color (#DCEBF3).
+  static const Color breakfastCardBackground = Color(0xFFDCEBF3);
+
+  /// Breakfast action button background color (reuses primaryTeal).
+  static const Color breakfastButton = primaryTeal;
+
+  /// Breakfast active progress indicator color (#7BA3B5).
+  static const Color breakfastProgress = Color(0xFF7BA3B5);
+
+  /// Lunch card background color (#E8E8EF).
+  static const Color lunchCardBackground = Color(0xFFE8E8EF);
+
+  /// Lunch action button background color (#2F3C8F).
+  static const Color lunchButton = Color(0xFF2F3C8F);
+
+  /// Lunch active progress indicator color (#8E94C0).
+  static const Color lunchProgress = Color(0xFF8E94C0);
+
+  /// Progress bar track background color (#FFFFFF with 60% opacity).
+  static const Color progressTrack = Color(0x99FFFFFF);
 }

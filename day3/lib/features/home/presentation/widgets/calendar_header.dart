@@ -47,4 +47,3 @@ class CalendarHeader extends StatelessWidget {
     );
   }
 }
-

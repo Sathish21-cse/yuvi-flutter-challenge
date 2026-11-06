@@ -114,4 +114,36 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.surfaceWhite,
   );
+
+  /// Meal card section title (18px, semi-bold, textPrimary).
+  static const TextStyle mealTitle = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 18.0,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textPrimary,
+  );
+
+  /// Food name text style (18px, medium, textPrimary).
+  static const TextStyle foodName = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 18.0,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textPrimary,
+  );
+
+  /// Food calories text style (14px, regular, textSecondary).
+  static const TextStyle foodCalories = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14.0,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textSecondary,
+  );
+
+  /// Meal footer label and remaining calories style (12px, regular, textPrimary).
+  static const TextStyle mealFooter = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 12.0,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textPrimary,
+  );
 }

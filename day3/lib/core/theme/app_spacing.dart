@@ -106,4 +106,28 @@ class AppSpacing {
 
   /// Corner radius for selected day pill (24px).
   static const double selectedPillRadius = 24.0;
+
+  /// Internal padding for meal cards (16px).
+  static const double mealCardPadding = 16.0;
+
+  /// Corner radius for meal cards (24px).
+  static const double mealCardRadius = 24.0;
+
+  /// Diameter of circular action button in meal card header (40px).
+  static const double mealButtonSize = 40.0;
+
+  /// Icon size for add icon in meal card header (22px).
+  static const double mealButtonIconSize = 22.0;
+
+  /// Diameter of circular food image in meal card (48px).
+  static const double foodImageSize = 48.0;
+
+  /// Icon size for the flame calorie icon (16px).
+  static const double flameIconSize = 16.0;
+
+  /// Height of the thin progress bar in meal progress footer (6px).
+  static const double progressBarHeight = 6.0;
+
+  /// Corner radius for the progress bar (3px).
+  static const double progressBarRadius = 3.0;
 }

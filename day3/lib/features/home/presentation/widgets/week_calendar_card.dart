@@ -32,4 +32,3 @@ class WeekCalendarCard extends StatelessWidget {
     );
   }
 }
-
