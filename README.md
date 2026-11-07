@@ -2,7 +2,6 @@
 
 Recreating a calorie-tracker mobile app mockup in Flutter, one component per day. The focus is the visual design (UI only), built with small, simple widgets.
 
-
 ## What was done each day
 
 ### Day 0: Setup
@@ -20,10 +19,16 @@ Recreating a calorie-tracker mobile app mockup in Flutter, one component per day
 - Built the Carbs, Protein and Fat cards below the calorie card.
 - The Fat card is cut off at the screen edge, as in the mockup.
 
-### Day 3: Week calendar
+### Day 3: Week calendar and meal cards
 - Built the calendar header ("February 2026" and the two arrow buttons).
 - Built the row of seven days, with the selected day shown as a teal pill.
+- Built the Breakfast and Lunch meal cards from one reusable `MealCard` widget.
+- The Home screen is now complete.
 
+### Day 4: Statistics screen top bar
+- Created the Statistics screen (the second screen).
+- Built the app bar with the back button, the "Statistics" title and the "…" button.
+- Reused one `StatisticsIconButton` widget for both buttons.
 
 Each day folder is a complete Flutter project that runs on its own, with its own `README.md` and `screenshot.png`.
 
@@ -38,13 +43,14 @@ Each day folder is a complete Flutter project that runs on its own, with its own
 | Run target | Chrome (web) |
 | Packages | None added |
 
-
 ## How to run
 
-1. Open a terminal and go into the day you want to run (for example, day 3):
+Requires Flutter 3.47.9 and Dart 3.13.7 (or newer).
+
+1. Open a terminal and go into the day you want to run (for example, day 4):
 
 ```bash
-cd day3
+cd day4
 ```
 
 2. Get the packages:
@@ -58,4 +64,3 @@ flutter pub get
 ```bash
 flutter run -d chrome
 ```
-
