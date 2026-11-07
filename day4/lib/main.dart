@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'core/theme/app_colors.dart';
 import 'core/theme/app_spacing.dart';
 import 'core/theme/app_theme.dart';
-import 'features/statistics/presentation/screens/statistics_screen.dart';
+import 'features/home/presentation/screens/home_screen.dart';
 
 void main() {
   runApp(const CalorieTrackerApp());
@@ -19,7 +19,8 @@ class CalorieTrackerApp extends StatelessWidget {
       title: 'Calorie Tracker',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const MobileWebFrame(child: StatisticsScreen()),
+      builder: (context, child) => MobileWebFrame(child: child!),
+      home: const HomeScreen(),
     );
   }
 }

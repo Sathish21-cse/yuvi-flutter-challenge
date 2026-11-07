@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../statistics/presentation/screens/statistics_screen.dart';
 
 /// Circular button containing a notification bell icon.
 class NotificationButton extends StatelessWidget {
-  const NotificationButton({super.key, this.onPressed});
-
-  /// Optional callback invoked when the notification button is tapped.
-  final VoidCallback? onPressed;
+  const NotificationButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +23,19 @@ class NotificationButton extends StatelessWidget {
           ),
         ),
       ),
-      child: const Icon(
-        Icons.notifications_none_rounded,
-        size: AppSpacing.iconSize,
-        color: AppColors.textPrimary,
+      child: InkWell(
+        customBorder: const CircleBorder(),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const StatisticsScreen()),
+          );
+        },
+        child: const Icon(
+          Icons.notifications_none_rounded,
+          size: AppSpacing.iconSize,
+          color: AppColors.textPrimary,
+        ),
       ),
     );
   }
