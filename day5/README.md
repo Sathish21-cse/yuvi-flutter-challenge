@@ -1,10 +1,5 @@
 # Day 5 – Weekly Bar Chart
 
-Part of the Yuva Labs Flutter UI challenge: recreating a calorie-tracker mobile app mockup, one component at a time.
-
-## Screenshot
-
-![Day 5 screenshot](screenshot.png)
 
 ## What I changed today
 
