@@ -32,6 +32,9 @@ class AppSpacing {
   /// 16px gap.
   static const double gap16 = 16.0;
 
+  /// 20px gap.
+  static const double gap20 = 20.0;
+
   /// 24px gap.
   static const double gap24 = 24.0;
 
@@ -62,6 +65,16 @@ class AppSpacing {
 
   /// Gap between lunch card and bottom peeking card (12px).
   static const double gapLunchToPeeking = 12.0;
+
+  // Statistics section gaps
+  /// Gap between statistics app bar and calories summary (20px).
+  static const double gapStatisticsAppBarToCalories = 20.0;
+
+  /// Gap between calories summary and bar chart (16px).
+  static const double gapCaloriesToChart = 16.0;
+
+  /// Gap between bar chart and info cards (24px).
+  static const double gapChartToInfoCards = 24.0;
 
   // Header tokens
   /// Avatar diameter (40px).
@@ -291,15 +304,15 @@ class AppSpacing {
   /// Full height of the bottom peeking card (160px).
   static const double peekingCardFullHeight = 160.0;
 
-  // Statistics screen tokens (unchanged)
+  // Statistics screen tokens
   /// Max mobile device viewport width for web/desktop layout (390px).
   static const double maxPhoneWidth = 390.0;
 
   /// Diameter of circular icon buttons in the statistics app bar (40px).
   static const double appBarButtonSize = 40.0;
 
-  /// Icon size for the back navigation icon in statistics app bar (16px).
-  static const double backIconSize = 16.0;
+  /// Icon size for the back navigation icon in statistics app bar (18px).
+  static const double backIconSize = 18.0;
 
   /// Icon size for the more horizontal options icon in statistics app bar (20px).
   static const double moreIconSize = 20.0;
@@ -307,8 +320,8 @@ class AppSpacing {
   /// Width of the chart vertical bars (12px).
   static const double chartBarWidth = 12.0;
 
-  /// Height of the chart vertical bars (175px).
-  static const double chartBarHeight = 175.0;
+  /// Height of the chart vertical bars (155px).
+  static const double chartBarHeight = 155.0;
 
   /// Corner radius for chart bars (6px).
   static const double chartBarRadius = 6.0;
@@ -316,30 +329,30 @@ class AppSpacing {
   /// Width of each chart bar column item (48px).
   static const double chartBarItemWidth = 48.0;
 
-  /// Height of the top area reserved for tooltip above bars (56px).
-  static const double chartTooltipAreaHeight = 56.0;
+  /// Height of the top area reserved for tooltip above bars (38px).
+  static const double chartTooltipAreaHeight = 38.0;
 
   /// Maximum width constraint for the chart tooltip overflow box (80px).
   static const double chartTooltipMaxWidth = 80.0;
 
-  /// Corner radius for chart tooltip pill (24px).
-  static const double chartTooltipRadius = 24.0;
+  /// Corner radius for chart tooltip pill (16px).
+  static const double chartTooltipRadius = 16.0;
 
-  /// Horizontal padding inside chart tooltip pill (16px).
-  static const double chartTooltipPaddingHorizontal = 16.0;
+  /// Horizontal padding inside chart tooltip pill (12px).
+  static const double chartTooltipPaddingHorizontal = 12.0;
 
-  /// Vertical padding inside chart tooltip pill (12px).
-  static const double chartTooltipPaddingVertical = 12.0;
+  /// Vertical padding inside chart tooltip pill (6px).
+  static const double chartTooltipPaddingVertical = 6.0;
 
   /// Internal padding for information cards (16px).
   static const double infoCardPadding = 16.0;
 
-  /// Height of the information cards (190px).
-  static const double infoCardHeight = 190.0;
+  /// Height of the information cards (130px).
+  static const double infoCardHeight = 130.0;
 
   /// Corner radius for information cards (24px).
   static const double infoCardRadius = 24.0;
 
-  /// Ring icon image size inside information cards (56px).
-  static const double infoCardIconSize = 56.0;
+  /// Ring icon image size inside information cards (44px).
+  static const double infoCardIconSize = 44.0;
 }

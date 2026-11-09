@@ -45,18 +45,23 @@ class ChartBarItem extends StatelessWidget {
   }
 
   Widget _buildTooltipArea() {
+    if (!isSelected) {
+      return const SizedBox(height: AppSpacing.chartTooltipAreaHeight);
+    }
     return SizedBox(
       height: AppSpacing.chartTooltipAreaHeight,
-      child: isSelected
-          ? Align(
-              alignment: Alignment.bottomCenter,
-              child: OverflowBox(
-                maxWidth: AppSpacing.chartTooltipMaxWidth,
-                alignment: Alignment.bottomCenter,
-                child: ChartTooltip(text: tooltipText),
-              ),
-            )
-          : null,
+      child: _buildTooltipPill(),
+    );
+  }
+
+  Widget _buildTooltipPill() {
+    return Align(
+      alignment: Alignment.bottomCenter,
+      child: OverflowBox(
+        maxWidth: AppSpacing.chartTooltipMaxWidth,
+        alignment: Alignment.bottomCenter,
+        child: ChartTooltip(text: tooltipText),
+      ),
     );
   }
 

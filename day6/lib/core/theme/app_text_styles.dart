@@ -164,36 +164,84 @@ class AppTextStyles {
     color: AppColors.textPrimary,
   );
 
-  // Statistics screen styles (unchanged)
-  /// Top app bar title style (20px, medium, textPrimary).
+  // Statistics screen styles
+  /// Top app bar title style (18px, semi-bold, textPrimary).
   static const TextStyle appBarTitle = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 20.0,
-    fontWeight: FontWeight.w500,
+    fontSize: 18.0,
+    fontWeight: FontWeight.w600,
     color: AppColors.textPrimary,
   );
 
-  /// Tooltip text style (14px, medium, white).
-  static const TextStyle tooltipText = TextStyle(
+  /// Statistics section title style (16px, semi-bold, textPrimary).
+  static const TextStyle statisticsSectionTitle = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 14.0,
-    fontWeight: FontWeight.w500,
-    color: AppColors.surfaceWhite,
+    fontSize: 16.0,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textPrimary,
   );
 
-  /// Day label text style for unselected chart bars (14px, regular, textSecondary).
-  static const TextStyle chartDayLabel = TextStyle(
+  /// Statistics calorie count display value (30px, semi-bold, textPrimary).
+  static const TextStyle statisticsCaloriesValue = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 30.0,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textPrimary,
+  );
+
+  /// Statistics calorie unit style (14px, regular, textSecondary).
+  static const TextStyle statisticsCaloriesUnit = TextStyle(
     fontFamily: fontFamily,
     fontSize: 14.0,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,
   );
 
-  /// Day label text style for selected chart bar (14px, medium, textPrimary).
-  static const TextStyle chartDayLabelSelected = TextStyle(
+  /// Statistics target label style (14px, regular, textSecondary).
+  static const TextStyle statisticsTargetLabel = TextStyle(
     fontFamily: fontFamily,
     fontSize: 14.0,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textSecondary,
+  );
+
+  /// Statistics target numeric value style (14px, semi-bold, textPrimary).
+  static const TextStyle statisticsTargetValue = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14.0,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textPrimary,
+  );
+
+  /// Statistics target unit style (14px, regular, textSecondary).
+  static const TextStyle statisticsTargetUnit = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14.0,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textSecondary,
+  );
+
+  /// Tooltip text style (13px, medium, white).
+  static const TextStyle tooltipText = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 13.0,
     fontWeight: FontWeight.w500,
+    color: AppColors.surfaceWhite,
+  );
+
+  /// Day label text style for unselected chart bars (13px, regular, textSecondary).
+  static const TextStyle chartDayLabel = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 13.0,
+    fontWeight: FontWeight.w400,
+    color: AppColors.textSecondary,
+  );
+
+  /// Day label text style for selected chart bar (13px, semi-bold, textPrimary).
+  static const TextStyle chartDayLabelSelected = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 13.0,
+    fontWeight: FontWeight.w600,
     color: AppColors.textPrimary,
   );
 
@@ -205,18 +253,18 @@ class AppTextStyles {
     color: AppColors.textSecondary,
   );
 
-  /// Information card value text style (22px, medium, textPrimary).
+  /// Information card value text style (22px, semi-bold, textPrimary).
   static const TextStyle infoCardValue = TextStyle(
     fontFamily: fontFamily,
     fontSize: 22.0,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
     color: AppColors.textPrimary,
   );
 
-  /// Information card unit text style (12px, regular, textSecondary).
+  /// Information card unit text style (13px, regular, textSecondary).
   static const TextStyle infoCardUnit = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 12.0,
+    fontSize: 13.0,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,
   );

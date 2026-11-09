@@ -41,10 +41,7 @@ class InfoCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          _buildTopRow(),
-          _buildBottomColumn(),
-        ],
+        children: [_buildTopRow(), _buildBottomColumn()],
       ),
     );
   }
@@ -75,4 +72,3 @@ class InfoCard extends StatelessWidget {
     );
   }
 }
-

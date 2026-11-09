@@ -33,4 +33,3 @@ class InfoCardsRow extends StatelessWidget {
     );
   }
 }
-

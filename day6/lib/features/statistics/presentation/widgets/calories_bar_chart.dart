@@ -56,4 +56,3 @@ class CaloriesBarChart extends StatelessWidget {
     );
   }
 }
-

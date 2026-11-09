@@ -10,6 +10,7 @@ class StatisticsIconButton extends StatelessWidget {
     super.key,
     required this.icon,
     required this.iconSize,
+    this.onTap,
   });
 
   /// The icon to display.
@@ -18,12 +19,14 @@ class StatisticsIconButton extends StatelessWidget {
   /// The size of the icon.
   final double iconSize;
 
+  /// Optional tap callback.
+  final VoidCallback? onTap;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       width: AppSpacing.appBarButtonSize,
       height: AppSpacing.appBarButtonSize,
-      alignment: Alignment.center,
       decoration: const BoxDecoration(
         color: AppColors.surfaceWhite,
         shape: BoxShape.circle,
@@ -34,7 +37,17 @@ class StatisticsIconButton extends StatelessWidget {
           ),
         ),
       ),
-      child: Icon(icon, size: iconSize, color: AppColors.textPrimary),
+      child: _buildInkWell(),
+    );
+  }
+
+  Widget _buildInkWell() {
+    return InkWell(
+      customBorder: const CircleBorder(),
+      onTap: onTap,
+      child: Center(
+        child: Icon(icon, size: iconSize, color: AppColors.textPrimary),
+      ),
     );
   }
 }

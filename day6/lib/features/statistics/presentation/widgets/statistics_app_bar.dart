@@ -11,20 +11,17 @@ class StatisticsAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         StatisticsIconButton(
-          icon: Icons.arrow_back_ios_new_rounded,
+          icon: Icons.chevron_left_rounded,
           iconSize: AppSpacing.backIconSize,
+          onTap: () => Navigator.maybePop(context),
         ),
-        Expanded(
-          child: Center(
-            child: Text('Statistics', style: AppTextStyles.appBarTitle),
-          ),
-        ),
-        StatisticsIconButton(
+        const Text('Statistics', style: AppTextStyles.appBarTitle),
+        const StatisticsIconButton(
           icon: Icons.more_horiz_rounded,
           iconSize: AppSpacing.moreIconSize,
         ),
