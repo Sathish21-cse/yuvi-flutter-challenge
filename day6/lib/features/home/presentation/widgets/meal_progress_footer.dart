@@ -28,7 +28,7 @@ class MealProgressFooter extends StatelessWidget {
     return Column(
       children: [
         _buildProgressBar(),
-        const SizedBox(height: AppSpacing.gap8),
+        const SizedBox(height: AppSpacing.mealGapProgressToFooter),
         _buildCaloriesRow(),
       ],
     );

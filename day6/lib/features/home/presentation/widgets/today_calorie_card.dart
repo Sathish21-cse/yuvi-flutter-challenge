@@ -23,7 +23,11 @@ class TodayCalorieCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(AppSpacing.cardPadding),
+      height: AppSpacing.calorieCardHeight,
+      padding: const EdgeInsets.only(
+        left: AppSpacing.calorieCardPaddingLeft,
+        right: AppSpacing.calorieCardPaddingRight,
+      ),
       decoration: const BoxDecoration(
         color: AppColors.calorieCardBackground,
         borderRadius: BorderRadius.all(Radius.circular(AppSpacing.cardRadius)),

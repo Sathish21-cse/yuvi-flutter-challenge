@@ -13,14 +13,16 @@ class CalorieAmountText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        _buildTitleRow(),
-        const SizedBox(height: AppSpacing.gap12),
-        _buildValueRow(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: AppSpacing.gap14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildTitleRow(),
+          const SizedBox(height: AppSpacing.gap8),
+          _buildValueRow(),
+        ],
+      ),
     );
   }
 
@@ -33,7 +35,7 @@ class CalorieAmountText extends StatelessWidget {
           size: AppSpacing.boltIconSize,
           color: AppColors.textPrimary,
         ),
-        SizedBox(width: AppSpacing.gap8),
+        SizedBox(width: AppSpacing.gap6),
         Text('Today Calorie', style: AppTextStyles.cardTitle),
       ],
     );
@@ -46,7 +48,7 @@ class CalorieAmountText extends StatelessWidget {
       textBaseline: TextBaseline.alphabetic,
       children: [
         Text('$totalCalories', style: AppTextStyles.calorieValue),
-        const SizedBox(width: AppSpacing.gap4),
+        const SizedBox(width: AppSpacing.gap2),
         const Text('kcal', style: AppTextStyles.calorieUnit),
       ],
     );

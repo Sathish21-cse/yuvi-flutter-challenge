@@ -15,7 +15,7 @@ class GreetingText extends StatelessWidget {
       children: [
         Text('Good Morning 👋', style: AppTextStyles.greeting),
         SizedBox(height: AppSpacing.gap4),
-        Text('Sathish', style: AppTextStyles.userName),
+        Text('Ann Ezechukwu', style: AppTextStyles.userName),
       ],
     );
   }

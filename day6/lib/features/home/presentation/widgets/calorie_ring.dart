@@ -1,5 +1,3 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
@@ -42,16 +40,14 @@ class CalorieRing extends StatelessWidget {
 
   Widget _buildProgressArc() {
     return Transform.rotate(
-      angle: -math.pi / 4,
+      angle: AppSpacing.ringOpeningAngle,
       child: SizedBox(
         width: AppSpacing.ringSize,
         height: AppSpacing.ringSize,
         child: CircularProgressIndicator(
           value: progress,
           strokeWidth: AppSpacing.ringStrokeWidth,
-          color: AppColors.primaryTeal,
-          // color:Colors.red,
-
+          color: AppColors.ringArc,
           strokeCap: StrokeCap.round,
           backgroundColor: Colors.transparent,
         ),

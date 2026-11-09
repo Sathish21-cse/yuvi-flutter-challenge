@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Design color tokens used across the application.
+/// Design color tokens used across the application sampled from the mockup.
 class AppColors {
   const AppColors._();
 
@@ -10,69 +10,97 @@ class AppColors {
   /// Card and container surface white (#FFFFFF).
   static const Color surfaceWhite = Color(0xFFFFFFFF);
 
-  /// Dark teal-blue accent used for buttons and active states (#2E6B82).
-  static const Color primaryTeal = Color(0xFF2E6B82);
+  /// Dark teal-blue accent used for buttons and active states (#357084).
+  static const Color primaryTeal = Color(0xFF357084);
 
-  /// Primary body and title text color (#1A1A1A).
+  /// Primary body and title text color - near-black (#1A1A1A).
   static const Color textPrimary = Color(0xFF1A1A1A);
 
-  /// Secondary descriptive text and subtitle color (#6B6B6B).
+  /// Secondary descriptive text and subtitle color - grey (#6B6B6B).
   static const Color textSecondary = Color(0xFF6B6B6B);
 
   /// Light border color for outlines and dividers (#E6E6E6).
   static const Color borderLight = Color(0xFFE6E6E6);
 
-  /// Very light blue tint background for the calorie card (#EAF4F7).
-  static const Color calorieCardBackground = Color(0xFFEAF4F7);
+  /// Very light blue tint background for the calorie card (#F2FAFD).
+  static const Color calorieCardBackground = Color(0xFFF2FAFD);
 
-  /// Light track color behind the calorie ring progress arc (#D3E3E9).
-  static const Color ringTrack = Color(0xFFD3E3E9);
+  /// Very light nearly-white track color behind the calorie ring progress arc (#F4FAFA).
+  static const Color ringTrack = Color(0xFFF4FAFA);
 
-  /// Exact peach tint background for carbs icon circle from reference image (#FFF0DE).
+  /// Calorie ring active arc color (#347184).
+  static const Color ringArc = Color(0xFF347184);
+
+  /// Soft white pill background for carbs (#FFFFFF).
+  static const Color carbsPillBackground = surfaceWhite;
+
+  /// Exact peach tint background for carbs icon circle (#FFF0DE).
   static const Color carbsTint = Color(0xFFFFF0DE);
 
-  /// Exact light green tint background for protein icon circle from reference image (#E5FFDD).
+  /// Partial fill color for carbs line (peach/yellow, #FDB872).
+  static const Color carbsLineFill = Color(0xFFFDB872);
+
+  /// Soft white pill background for protein (#FFFFFF).
+  static const Color proteinPillBackground = surfaceWhite;
+
+  /// Exact light green tint background for protein icon circle (#E5FFDD).
   static const Color proteinTint = Color(0xFFE5FFDD);
 
-  /// Exact light grey-lavender tint background for fat icon circle from reference image (#EBECF0).
+  /// Partial fill color for protein line (light green, #96E082).
+  static const Color proteinLineFill = Color(0xFF96E082);
+
+  /// Soft white pill background for fat (#FFFFFF).
+  static const Color fatPillBackground = surfaceWhite;
+
+  /// Exact light grey-lavender tint background for fat icon circle (#EBECF0).
   static const Color fatTint = Color(0xFFEBECF0);
 
-  /// Light grey decorative line under macro label (#E6E6E6).
-  static const Color macroLine = Color(0xFFE6E6E6);
+  /// Very light grey track for macro progress line (#EAEAEA).
+  static const Color macroLine = Color(0xFFEAEAEA);
 
   /// Week calendar card surface white background (#FFFFFF).
   static const Color weekCardBackground = surfaceWhite;
 
-  /// Background color for unselected day number circles (#EEF4F7).
-  static const Color dayCircleBackground = Color(0xFFEEF4F7);
+  /// Background color for unselected day number circles (light blue tint, #F4F8FA).
+  static const Color dayCircleBackground = Color(0xFFF4F8FA);
 
-  /// Selected day pill background color (#2E6B82).
+  /// Selected day pill background color (#357084).
   static const Color selectedPill = primaryTeal;
 
-  /// Background color for calendar navigation arrow buttons (#F3F3F3).
-  static const Color arrowButtonBackground = Color(0xFFF3F3F3);
+  /// Background color for calendar navigation arrow buttons (#F2F4F4).
+  static const Color arrowButtonBackground = Color(0xFFF2F4F4);
 
-  /// Breakfast card background color (#DCEBF3).
-  static const Color breakfastCardBackground = Color(0xFFDCEBF3);
+  /// Chevron icon color for calendar arrow buttons (#357084).
+  static const Color arrowButtonIcon = primaryTeal;
 
-  /// Breakfast action button background color (reuses primaryTeal).
-  static const Color breakfastButton = primaryTeal;
+  /// Breakfast card background color (#D9EBF5).
+  static const Color breakfastCardBackground = Color(0xFFD9EBF5);
 
-  /// Breakfast active progress indicator color (#7BA3B5).
-  static const Color breakfastProgress = Color(0xFF7BA3B5);
+  /// Breakfast action button background color (#357086).
+  static const Color breakfastButton = Color(0xFF357086);
 
-  /// Lunch card background color (#E8E8EF).
-  static const Color lunchCardBackground = Color(0xFFE8E8EF);
+  /// Breakfast active progress indicator color (#7E9FB0).
+  static const Color breakfastProgress = Color(0xFF7E9FB0);
 
-  /// Lunch action button background color (#2F3C8F).
-  static const Color lunchButton = Color(0xFF2F3C8F);
+  /// Lunch card background color (#E8E9EE).
+  static const Color lunchCardBackground = Color(0xFFE8E9EE);
 
-  /// Lunch active progress indicator color (#8E94C0).
-  static const Color lunchProgress = Color(0xFF8E94C0);
+  /// Lunch action button background color (#3C4C8A).
+  static const Color lunchButton = Color(0xFF3C4C8A);
 
-  /// Progress bar track background color (#FFFFFF with 60% opacity).
-  static const Color progressTrack = Color(0x99FFFFFF);
+  /// Lunch active progress indicator color (#838AB4).
+  static const Color lunchProgress = Color(0xFF838AB4);
 
+  /// Progress bar track background color (#FFFFFF with 50% opacity).
+  static const Color progressTrack = Color(0x80FFFFFF);
+
+  /// Third peeking card background color (#ECFDED).
+  static const Color peekingCardBackground = Color(0xFFECFDED);
+
+  /// Tip circle color on third peeking card (#42593F).
+  static const Color peekingCardCircle = Color(0xFF42593F);
+
+  // Statistics screen colors (unchanged)
   /// Background track color for chart bars (#FFFFFF).
   static const Color barTrack = Color(0xFFFFFFFF);
 

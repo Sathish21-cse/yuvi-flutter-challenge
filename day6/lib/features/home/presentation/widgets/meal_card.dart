@@ -52,7 +52,12 @@ class MealCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(AppSpacing.mealCardPadding),
+      height: AppSpacing.mealCardHeight,
+      padding: const EdgeInsets.only(
+        left: AppSpacing.mealCardPadding,
+        right: AppSpacing.mealCardPadding,
+        top: AppSpacing.mealCardPadding,
+      ),
       decoration: BoxDecoration(
         color: cardColor,
         borderRadius: const BorderRadius.all(
@@ -63,13 +68,13 @@ class MealCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           MealCardHeader(mealTitle: mealTitle, buttonColor: buttonColor),
-          const SizedBox(height: AppSpacing.gap12),
+          const SizedBox(height: AppSpacing.mealGapHeaderToFood),
           MealFoodRow(
             imagePath: imagePath,
             foodName: foodName,
             calories: calories,
           ),
-          const SizedBox(height: AppSpacing.gap12),
+          const SizedBox(height: AppSpacing.mealGapFoodToProgress),
           MealProgressFooter(
             progress: progress,
             progressColor: progressColor,

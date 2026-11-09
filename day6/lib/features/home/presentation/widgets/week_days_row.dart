@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_spacing.dart';
 import 'week_day_item.dart';
 
 /// Row displaying the seven days of the current week.
@@ -21,14 +22,27 @@ class WeekDaysRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return SizedBox(
+      height: AppSpacing.calendarDaysHeight,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.calendarDaysPaddingH,
+        ),
+        child: _buildDaysRow(),
+      ),
+    );
+  }
+
+  Widget _buildDaysRow() {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         for (int i = 0; i < _letters.length; i++)
-          WeekDayItem(
-            letter: _letters[i],
-            number: _numbers[i],
-            isSelected: i == _selectedIndex,
+          Expanded(
+            child: WeekDayItem(
+              letter: _letters[i],
+              number: _numbers[i],
+              isSelected: i == _selectedIndex,
+            ),
           ),
       ],
     );

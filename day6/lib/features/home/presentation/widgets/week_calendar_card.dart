@@ -14,18 +14,18 @@ class WeekCalendarCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(AppSpacing.weekCardPadding),
+      height: AppSpacing.calendarCardHeight,
       decoration: const BoxDecoration(
         color: AppColors.weekCardBackground,
         borderRadius: BorderRadius.all(
-          Radius.circular(AppSpacing.weekCardRadius),
+          Radius.circular(AppSpacing.calendarCardRadius),
         ),
       ),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CalendarHeader(),
-          SizedBox(height: AppSpacing.gap16),
+          SizedBox(height: AppSpacing.calendarDaysGapTop),
           WeekDaysRow(),
         ],
       ),

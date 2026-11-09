@@ -28,7 +28,7 @@ class MealFoodRow extends StatelessWidget {
     return Row(
       children: [
         _buildImage(),
-        const SizedBox(width: AppSpacing.gap12),
+        const SizedBox(width: AppSpacing.foodImageGap),
         _buildInfoColumn(),
       ],
     );

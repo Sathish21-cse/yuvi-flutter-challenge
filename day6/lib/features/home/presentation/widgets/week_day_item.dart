@@ -26,52 +26,65 @@ class WeekDayItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (isSelected) {
-      return _buildSelectedItem();
+      return Center(
+        child: Container(
+          width: AppSpacing.selectedPillWidth,
+          height: AppSpacing.selectedPillHeight,
+          decoration: const BoxDecoration(
+            color: AppColors.selectedPill,
+            borderRadius: BorderRadius.all(
+              Radius.circular(AppSpacing.selectedPillRadius),
+            ),
+          ),
+          child: _buildColumn(),
+        ),
+      );
     }
-    return _buildUnselectedItem();
+    return Center(
+      child: SizedBox(
+        width: AppSpacing.selectedPillWidth,
+        height: AppSpacing.selectedPillHeight,
+        child: _buildColumn(),
+      ),
+    );
   }
 
-  Widget _buildSelectedItem() {
-    return Container(
-      width: AppSpacing.selectedPillWidth,
-      height: AppSpacing.selectedPillHeight,
-      decoration: const BoxDecoration(
-        color: AppColors.selectedPill,
-        borderRadius: BorderRadius.all(
-          Radius.circular(AppSpacing.selectedPillRadius),
+  Widget _buildColumn() {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _buildLetter(),
+        const SizedBox(height: AppSpacing.dayLetterCircleGap),
+        _buildCircle(),
+        const SizedBox(height: AppSpacing.dayCircleBottomGap),
+      ],
+    );
+  }
+
+  Widget _buildLetter() {
+    return SizedBox(
+      height: AppSpacing.dayLetterHeight,
+      child: Center(
+        child: Text(
+          letter,
+          style: isSelected
+              ? AppTextStyles.selectedDayLetter
+              : AppTextStyles.dayLetter,
         ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(letter, style: AppTextStyles.selectedDayLetter),
-          const SizedBox(height: AppSpacing.gap8),
-          _buildCircle(backgroundColor: AppColors.surfaceWhite),
-        ],
-      ),
     );
   }
 
-  Widget _buildUnselectedItem() {
-    return SizedBox(
-      height: AppSpacing.selectedPillHeight,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(letter, style: AppTextStyles.dayLetter),
-          const SizedBox(height: AppSpacing.gap12),
-          _buildCircle(backgroundColor: AppColors.dayCircleBackground),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildCircle({required Color backgroundColor}) {
+  Widget _buildCircle() {
     return Container(
       width: AppSpacing.dayCircleSize,
       height: AppSpacing.dayCircleSize,
-      decoration: BoxDecoration(color: backgroundColor, shape: BoxShape.circle),
+      decoration: BoxDecoration(
+        color: isSelected
+            ? AppColors.surfaceWhite
+            : AppColors.dayCircleBackground,
+        shape: BoxShape.circle,
+      ),
       alignment: Alignment.center,
       child: Text(number, style: AppTextStyles.dayNumber),
     );

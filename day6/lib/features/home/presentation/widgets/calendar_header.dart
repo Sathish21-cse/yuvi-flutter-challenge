@@ -11,12 +11,19 @@ class CalendarHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        const Text('February 2026', style: AppTextStyles.monthTitle),
-        _buildArrowButtons(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: AppSpacing.calendarHeaderPaddingH,
+        right: AppSpacing.calendarHeaderPaddingH,
+        top: AppSpacing.calendarHeaderPaddingTop,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          const Text('February 2026', style: AppTextStyles.monthTitle),
+          _buildArrowButtons(),
+        ],
+      ),
     );
   }
 
@@ -25,7 +32,7 @@ class CalendarHeader extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         _buildArrow(Icons.chevron_left_rounded),
-        const SizedBox(width: AppSpacing.gap12),
+        const SizedBox(width: AppSpacing.arrowButtonGap),
         _buildArrow(Icons.chevron_right_rounded),
       ],
     );
@@ -42,7 +49,7 @@ class CalendarHeader extends StatelessWidget {
       child: Icon(
         icon,
         size: AppSpacing.arrowIconSize,
-        color: AppColors.textPrimary,
+        color: AppColors.arrowButtonIcon,
       ),
     );
   }

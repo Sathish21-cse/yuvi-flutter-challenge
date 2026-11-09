@@ -20,7 +20,7 @@ void main() {
 
     // Header checks
     expect(find.text('Good Morning 👋'), findsOneWidget);
-    expect(find.text('Sathish'), findsOneWidget);
+    expect(find.text('Ann Ezechukwu'), findsOneWidget);
 
     // Today calorie card checks
     expect(find.text('Today Calorie'), findsOneWidget);
