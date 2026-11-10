@@ -2,6 +2,8 @@
 
 Recreating a calorie-tracker mobile app mockup in Flutter, one component per day. The focus is the visual design (UI only), built with small, simple widgets.
 
+Two screens are built: **Home** and **Statistics**. Tapping the bell icon on Home opens Statistics, and the back button returns to Home.
+
 ## What was done each day
 
 ### Day 0: Setup
@@ -25,10 +27,25 @@ Recreating a calorie-tracker mobile app mockup in Flutter, one component per day
 - Built the Breakfast and Lunch meal cards from one reusable `MealCard` widget.
 - The Home screen is now complete.
 
-### Day 4: Statistics screen top bar
+### Day 4: Statistics screen top bar and navigation
 - Created the Statistics screen (the second screen).
 - Built the app bar with the back button, the "Statistics" title and the "…" button.
 - Reused one `StatisticsIconButton` widget for both buttons.
+- Connected the bell icon on Home to the Statistics screen.
+
+### Day 5: Weekly bar chart
+- Built the weekly bar chart with seven bars (Sun to Sat).
+- Showed the selected day (Monday) in dark teal with the "1,980" bubble above it.
+
+### Day 6: Steps, Water and Calories cards, plus fixes
+- Built the Steps and Water cards from one reusable `InfoCard` widget.
+- Added the Calories header above the bar chart (1980 Kcal and Target: 2500 Kcal).
+- Connected the back button on Statistics to return to Home.
+- Replaced my own images with the images cropped from the mockup (avatar, macro icons, breakfast and lunch).
+- Fixed the Home screen to match the mockup: Poppins font, text styles, colours and spacing.
+
+
+
 
 Each day folder is a complete Flutter project that runs on its own, with its own `README.md` and `screenshot.png`.
 
@@ -47,20 +64,20 @@ Each day folder is a complete Flutter project that runs on its own, with its own
 
 Requires Flutter 3.47.9 and Dart 3.13.7 (or newer).
 
-1. Open a terminal and go into the day you want to run (for example, day 4):
 
-```bash
-cd day4
 ```
 
-2. Get the packages:
+## Coding rules followed
 
-```bash
-flutter pub get
-```
+- Files and folders use `snake_case`.
+- Classes use `PascalCase`.
+- Variables and functions use `camelCase`.
+- Widgets are small and not deeply nested.
+- Colours, text styles and spacing are kept in one place instead of being written inside widgets.
 
-3. Run the app in the browser:
+## Notes
 
-```bash
-flutter run -d chrome
-```
+- The goal is to match the mockup visually, so values are hardcoded and there is no real data.
+- The only working feature is the navigation between the Home and Statistics screens.
+- Images were cropped from the mockup.
+- No extra packages were used.
