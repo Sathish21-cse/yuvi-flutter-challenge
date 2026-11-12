@@ -18,12 +18,13 @@ class MacroCardsRow extends StatelessWidget {
   }
 
   Widget _buildClippedRow() {
-    return ClipRect(
-      child: OverflowBox(
-        alignment: Alignment.centerLeft,
-        maxWidth: AppSpacing.macroRowMaxWidth,
+    return SingleChildScrollView(
+       scrollDirection: Axis.horizontal,
+      // child: OverflowBox(
+      //   alignment: Alignment.centerLeft,
+      //   maxWidth: AppSpacing.macroRowMaxWidth,
         child: _buildCardsRow(),
-      ),
+      // ),
     );
   }
 
