@@ -36,6 +36,18 @@ class MealCardsSection extends StatelessWidget {
           progress: AppSpacing.lunchProgress,
           caloriesLeft: '195 Left',
         ),
+                SizedBox(height: AppSpacing.gapBreakfastToLunch),
+        MealCard(
+          mealTitle: 'Dinner',
+          foodName: 'Grilled Salmon Plate',
+          calories: '142 kcal',
+          imagePath: 'assets/images/lunch.png',
+          cardColor: AppColors.peekingCardBackground,
+          buttonColor: AppColors.peekingCardCircle,
+          progressColor: AppColors.peekingCardCircle,
+          progress: AppSpacing.lunchProgress,
+          caloriesLeft: '195 Left',
+        ),
       ],
     );
   }

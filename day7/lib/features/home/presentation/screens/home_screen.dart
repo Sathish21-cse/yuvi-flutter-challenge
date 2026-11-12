@@ -53,13 +53,6 @@ class HomeScreen extends StatelessWidget {
             ),
             child: MealCardsSection(),
           ),
-          SizedBox(height: AppSpacing.gapLunchToPeeking),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: AppSpacing.screenHorizontal,
-            ),
-            child: PeekingCard(),
-          ),
           SizedBox(height: AppSpacing.gapBottom),
         ],
       ),
