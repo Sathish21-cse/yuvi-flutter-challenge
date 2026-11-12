@@ -1,25 +1,23 @@
-# Day 6 – Steps and Water Cards
+# Day 7 – Health Score Card and Final Polish
 
 
 
 ## What I changed today
 
-- Built the Steps and Water cards on the Statistics screen:
-  - `info_cards_row.dart`: row that holds the two cards
-  - `info_card.dart`: one card with title, ring icon, value and unit
-- Added the steps and water icons to `assets/images/`.
-- Added the cards to `statistics_screen.dart`.
-- Added the Calories header above the bar chart (1980 Kcal and Target: 2500 Kcal).
-- Connected the back button on the Statistics screen to return to the Home screen.
-- Replaced my own images (avatar, macro icons, breakfast and lunch) with the images cropped from the mockup.
-- Fixed the Home screen to match the mockup: Poppins font, text styles, colours and spacing.
+- Built the Health score card at the bottom of the Statistics screen:
+  - `health_score_card.dart`: the white card that holds everything
+  - `health_score_header.dart`: "Health score", "Good" and the ring
+  - `health_score_ring.dart`: green ring with "7/10" in the middle
+  - `health_metric_row.dart`: one row with icon, label, value and a coloured dot
+- Added the Fiber, BPM, Sugar and Sodium icons to `assets/images/`.
+- Added the coloured fill lines and soft background tints to the Carbs, Protein and Fat cards.
+- Fixed the Statistics screen to match the mockup: Poppins font, bold "Good", gap between the "1,980" bubble and the bars, bar size, card heights and status dot colours.
+- Added the Health score card to `statistics_screen.dart`.
 
 ## What I learnt
 
-- One `InfoCard` widget is reused for both Steps and Water, with different values.
-- `Expanded` makes the two cards the same width.
-- `Column` with `spaceBetween` puts the title at the top and the value at the bottom.
-- `Navigator.pop` takes the user back to the previous screen.
-- The font must be declared in `pubspec.yaml` and set in the text styles, or Flutter shows the default font.
-- Measuring sizes and gaps from the mockup gives a closer match than guessing.
+- The same ring idea (two `CircularProgressIndicator` widgets in a `Stack`) works for both the calorie ring and the health ring.
+- One `HealthMetricRow` widget is reused four times with different icons and values.
+- Every screen needs the font set in its text styles, or Flutter shows the default Roboto font.
+- Comparing my output with the mockup side by side shows small details like the bubble gap and font weights.
 

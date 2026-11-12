@@ -44,8 +44,11 @@ Two screens are built: **Home** and **Statistics**. Tapping the bell icon on Hom
 - Replaced my own images with the images cropped from the mockup (avatar, macro icons, breakfast and lunch).
 - Fixed the Home screen to match the mockup: Poppins font, text styles, colours and spacing.
 
-
-
+### Day 7: Health score card and final polish
+- Built the Health score card with the 7/10 ring and the Fiber, BPM, Sugar and Sodium rows.
+- Added the coloured fill lines and soft tints to the Carbs, Protein and Fat cards.
+- Fixed the Statistics screen to match the mockup: Poppins font, bold "Good", bubble gap, bar size, card heights and dot colours.
+- Both screens are now complete.
 
 Each day folder is a complete Flutter project that runs on its own, with its own `README.md` and `screenshot.png`.
 
@@ -64,7 +67,22 @@ Each day folder is a complete Flutter project that runs on its own, with its own
 
 Requires Flutter 3.47.9 and Dart 3.13.7 (or newer).
 
+1. Open a terminal and go into the final day folder:
 
+```bash
+cd day7
+```
+
+2. Get the packages:
+
+```bash
+flutter pub get
+```
+
+3. Run the app in the browser:
+
+```bash
+flutter run -d chrome
 ```
 
 ## Coding rules followed
@@ -75,9 +93,3 @@ Requires Flutter 3.47.9 and Dart 3.13.7 (or newer).
 - Widgets are small and not deeply nested.
 - Colours, text styles and spacing are kept in one place instead of being written inside widgets.
 
-## Notes
-
-- The goal is to match the mockup visually, so values are hardcoded and there is no real data.
-- The only working feature is the navigation between the Home and Statistics screens.
-- Images were cropped from the mockup.
-- No extra packages were used.
