@@ -5,7 +5,6 @@ import '../../../../core/theme/app_spacing.dart';
 import '../widgets/home_header.dart';
 import '../widgets/macro_cards_row.dart';
 import '../widgets/meal_cards_section.dart';
-import '../widgets/peeking_card.dart';
 import '../widgets/today_calorie_card.dart';
 import '../widgets/week_calendar_card.dart';
 

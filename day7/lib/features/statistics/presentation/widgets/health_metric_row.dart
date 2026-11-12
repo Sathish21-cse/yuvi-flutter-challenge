@@ -56,4 +56,3 @@ class HealthMetricRow extends StatelessWidget {
     );
   }
 }
-

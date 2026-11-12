@@ -29,4 +29,3 @@ class HealthScoreHeader extends StatelessWidget {
     );
   }
 }
-

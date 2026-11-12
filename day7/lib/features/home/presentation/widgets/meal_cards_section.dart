@@ -36,7 +36,7 @@ class MealCardsSection extends StatelessWidget {
           progress: AppSpacing.lunchProgress,
           caloriesLeft: '195 Left',
         ),
-                SizedBox(height: AppSpacing.gapBreakfastToLunch),
+        SizedBox(height: AppSpacing.gapBreakfastToLunch),
         MealCard(
           mealTitle: 'Dinner',
           foodName: 'Grilled Salmon Plate',

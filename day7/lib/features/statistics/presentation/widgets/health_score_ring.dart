@@ -54,4 +54,3 @@ class HealthScoreRing extends StatelessWidget {
     return const Text('7/10', style: AppTextStyles.healthRingText);
   }
 }
-

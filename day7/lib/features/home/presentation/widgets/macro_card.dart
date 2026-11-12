@@ -14,11 +14,10 @@ class MacroCard extends StatelessWidget {
     required this.greyValue,
     required this.imagePath,
     required this.tintColor,
+    required this.pillColor,
     required this.cardWidth,
-    this.lineWidth = AppSpacing.macroLineWidth,
-    this.fillWidth = 0.0,
-    this.fillColor,
-    this.value = '',
+    required this.lineFillColor,
+    required this.lineFactor,
   });
 
   /// The macronutrient label (e.g. "Carbs").
@@ -36,20 +35,17 @@ class MacroCard extends StatelessWidget {
   /// Background tint color behind the circular image.
   final Color tintColor;
 
+  /// Soft background tint color of the pill container.
+  final Color pillColor;
+
   /// Explicit width of this macro pill card.
   final double cardWidth;
 
-  /// Width of the background track of the decoration line.
-  final double lineWidth;
+  /// Fill color for the progress portion of the decoration line.
+  final Color lineFillColor;
 
-  /// Width of the filled section of the decoration line.
-  final double fillWidth;
-
-  /// Accent fill color for the decoration line.
-  final Color? fillColor;
-
-  /// Legacy combined value parameter for backwards compatibility.
-  final String value;
+  /// Fraction of the decoration line filled from the left (0.0 to 1.0).
+  final double lineFactor;
 
   @override
   Widget build(BuildContext context) {
@@ -60,13 +56,9 @@ class MacroCard extends StatelessWidget {
         horizontal: AppSpacing.macroCardPadding,
       ),
       decoration: BoxDecoration(
-        color: AppColors.surfaceWhite,
+        color: pillColor,
         borderRadius: const BorderRadius.all(
           Radius.circular(AppSpacing.macroCardRadius),
-        ),
-        border: Border.all(
-          color: AppColors.borderLight,
-          width: AppSpacing.borderWidth,
         ),
       ),
       child: _buildRow(),
@@ -116,49 +108,43 @@ class MacroCard extends StatelessWidget {
   }
 
   Widget _buildDecorationLine() {
-    return Stack(
-      children: [
-        Container(
-          width: lineWidth,
-          height: AppSpacing.macroLineHeight,
-          decoration: const BoxDecoration(
-            color: AppColors.macroLine,
-            borderRadius: BorderRadius.all(
-              Radius.circular(AppSpacing.macroLineRadius),
-            ),
-          ),
+    return Container(
+      width: AppSpacing.macroLineWidth,
+      height: AppSpacing.macroLineHeight,
+      decoration: const BoxDecoration(
+        color: AppColors.macroLineTrack,
+        borderRadius: BorderRadius.all(
+          Radius.circular(AppSpacing.macroLineRadius),
         ),
-        if (fillColor != null && fillWidth > 0)
-          Container(
-            width: fillWidth,
-            height: AppSpacing.macroLineHeight,
-            decoration: BoxDecoration(
-              color: fillColor,
-              borderRadius: const BorderRadius.all(
-                Radius.circular(AppSpacing.macroLineRadius),
-              ),
-            ),
-          ),
-      ],
+      ),
+      child: FractionallySizedBox(
+        alignment: Alignment.centerLeft,
+        widthFactor: lineFactor,
+        child: _buildLineFill(),
+      ),
+    );
+  }
+
+  Widget _buildLineFill() {
+    return Container(
+      decoration: BoxDecoration(
+        color: lineFillColor,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(AppSpacing.macroLineRadius),
+        ),
+      ),
     );
   }
 
   Widget _buildValueText() {
-    final effectiveDark = darkValue.isNotEmpty
-        ? darkValue
-        : (value.contains('/') ? value.split('/')[0] : value);
-    final effectiveGrey = greyValue.isNotEmpty
-        ? greyValue
-        : (value.contains('/') ? '/${value.split('/')[1]}' : '');
-
     return FittedBox(
       fit: BoxFit.scaleDown,
       alignment: Alignment.centerLeft,
       child: Text.rich(
         TextSpan(
           children: [
-            TextSpan(text: effectiveDark, style: AppTextStyles.macroValueDark),
-            TextSpan(text: effectiveGrey, style: AppTextStyles.macroValueGrey),
+            TextSpan(text: darkValue, style: AppTextStyles.macroValueDark),
+            TextSpan(text: greyValue, style: AppTextStyles.macroValueGrey),
           ],
         ),
       ),

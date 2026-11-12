@@ -59,4 +59,3 @@ class HealthScoreCard extends StatelessWidget {
     );
   }
 }
-

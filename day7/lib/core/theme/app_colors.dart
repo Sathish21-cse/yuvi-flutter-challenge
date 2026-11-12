@@ -34,29 +34,44 @@ class AppColors {
   /// Soft white pill background for carbs (#FFFFFF).
   static const Color carbsPillBackground = surfaceWhite;
 
+  /// Very soft peach tint for carbs pill background (#FFFAF3).
+  static const Color carbsPillTint = Color(0xFFFFFAF3);
+
   /// Exact peach tint background for carbs icon circle (#FFF0DE).
   static const Color carbsTint = Color(0xFFFFF0DE);
 
-  /// Partial fill color for carbs line (peach/yellow, #FDB872).
-  static const Color carbsLineFill = Color(0xFFFDB872);
+  /// Partial fill color for carbs line (soft peach/yellow, #FAE4C4).
+  static const Color carbsLineFill = Color(0xFFFAE4C4);
 
   /// Soft white pill background for protein (#FFFFFF).
   static const Color proteinPillBackground = surfaceWhite;
 
+  /// Very soft green tint for protein pill background (#F7FFF4).
+  static const Color proteinPillTint = Color(0xFFF7FFF4);
+
   /// Exact light green tint background for protein icon circle (#E5FFDD).
   static const Color proteinTint = Color(0xFFE5FFDD);
 
-  /// Partial fill color for protein line (light green, #96E082).
-  static const Color proteinLineFill = Color(0xFF96E082);
+  /// Partial fill color for protein line (soft light green, #D4F6CA).
+  static const Color proteinLineFill = Color(0xFFD4F6CA);
 
   /// Soft white pill background for fat (#FFFFFF).
   static const Color fatPillBackground = surfaceWhite;
 
+  /// Very soft grey-lavender tint for fat pill background (#F8F9FB).
+  static const Color fatPillTint = Color(0xFFF8F9FB);
+
   /// Exact light grey-lavender tint background for fat icon circle (#EBECF0).
   static const Color fatTint = Color(0xFFEBECF0);
 
+  /// Partial fill color for fat line (soft grey-lavender, #E0E2E9).
+  static const Color fatLineFill = Color(0xFFE0E2E9);
+
   /// Very light grey track for macro progress line (#EAEAEA).
   static const Color macroLine = Color(0xFFEAEAEA);
+
+  /// Very light track for macro progress line (#F5F5F5).
+  static const Color macroLineTrack = Color(0xFFF5F5F5);
 
   /// Week calendar card surface white background (#FFFFFF).
   static const Color weekCardBackground = surfaceWhite;

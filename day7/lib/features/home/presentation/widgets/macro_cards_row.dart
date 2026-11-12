@@ -19,11 +19,11 @@ class MacroCardsRow extends StatelessWidget {
 
   Widget _buildClippedRow() {
     return SingleChildScrollView(
-       scrollDirection: Axis.horizontal,
+      scrollDirection: Axis.horizontal,
       // child: OverflowBox(
       //   alignment: Alignment.centerLeft,
       //   maxWidth: AppSpacing.macroRowMaxWidth,
-        child: _buildCardsRow(),
+      child: _buildCardsRow(),
       // ),
     );
   }
@@ -37,10 +37,10 @@ class MacroCardsRow extends StatelessWidget {
           greyValue: '/300g',
           imagePath: 'assets/images/bread.png',
           tintColor: AppColors.carbsTint,
+          pillColor: AppColors.carbsPillTint,
           cardWidth: AppSpacing.macroCarbsWidth,
-          lineWidth: AppSpacing.macroCarbsLineWidth,
-          fillWidth: AppSpacing.macroCarbsFillWidth,
-          fillColor: AppColors.carbsLineFill,
+          lineFillColor: AppColors.carbsLineFill,
+          lineFactor: 0.83,
         ),
         SizedBox(width: AppSpacing.macroPillsGap),
         MacroCard(
@@ -49,10 +49,10 @@ class MacroCardsRow extends StatelessWidget {
           greyValue: '/150g',
           imagePath: 'assets/images/green.png',
           tintColor: AppColors.proteinTint,
+          pillColor: AppColors.proteinPillTint,
           cardWidth: AppSpacing.macroProteinWidth,
-          lineWidth: AppSpacing.macroProteinLineWidth,
-          fillWidth: AppSpacing.macroProteinFillWidth,
-          fillColor: AppColors.proteinLineFill,
+          lineFillColor: AppColors.proteinLineFill,
+          lineFactor: 0.80,
         ),
         SizedBox(width: AppSpacing.macroPillsGap),
         MacroCard(
@@ -61,8 +61,10 @@ class MacroCardsRow extends StatelessWidget {
           greyValue: '/150g',
           imagePath: 'assets/images/butter.png',
           tintColor: AppColors.fatTint,
+          pillColor: AppColors.fatPillTint,
           cardWidth: AppSpacing.macroFatWidth,
-          lineWidth: AppSpacing.macroFatLineWidth,
+          lineFillColor: AppColors.fatLineFill,
+          lineFactor: 0.80,
         ),
       ],
     );
