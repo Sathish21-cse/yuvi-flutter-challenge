@@ -165,27 +165,28 @@ class AppTextStyles {
   );
 
   // Statistics screen styles
-  /// Top app bar title style (18px, semi-bold, textPrimary).
+  /// Top app bar title style (20px, medium, black).
   static const TextStyle appBarTitle = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 18.0,
-    fontWeight: FontWeight.w600,
-    color: AppColors.textPrimary,
+    fontSize: 20.0,
+    fontWeight: FontWeight.w500,
+    color: AppColors.black,
   );
 
-  /// Statistics section title style (16px, semi-bold, textPrimary).
+  /// Statistics section title style (16px, regular, textPrimary).
   static const TextStyle statisticsSectionTitle = TextStyle(
     fontFamily: fontFamily,
     fontSize: 16.0,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     color: AppColors.textPrimary,
   );
 
-  /// Statistics calorie count display value (30px, semi-bold, textPrimary).
+  /// Statistics calorie count display value (30px, medium, textPrimary).
+  /// Sized such that "1980" in Poppins-Medium is about 69 px wide.
   static const TextStyle statisticsCaloriesValue = TextStyle(
     fontFamily: fontFamily,
     fontSize: 30.0,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     color: AppColors.textPrimary,
   );
 
@@ -221,29 +222,24 @@ class AppTextStyles {
     color: AppColors.textSecondary,
   );
 
-  /// Tooltip text style (13px, medium, white).
+  /// Tooltip text style (14px, regular, white).
   static const TextStyle tooltipText = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 13.0,
-    fontWeight: FontWeight.w500,
+    fontSize: 14.0,
+    fontWeight: FontWeight.w400,
     color: AppColors.surfaceWhite,
   );
 
-  /// Day label text style for unselected chart bars (13px, regular, textSecondary).
+  /// Day label text style for all chart bars (14px, regular, textSecondary).
   static const TextStyle chartDayLabel = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 13.0,
+    fontSize: 14.0,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,
   );
 
-  /// Day label text style for selected chart bar (13px, semi-bold, textPrimary).
-  static const TextStyle chartDayLabelSelected = TextStyle(
-    fontFamily: fontFamily,
-    fontSize: 13.0,
-    fontWeight: FontWeight.w600,
-    color: AppColors.textPrimary,
-  );
+  /// Day label text style alias for selected bar (same style for all days).
+  static const TextStyle chartDayLabelSelected = chartDayLabel;
 
   /// Information card title text style (16px, regular, textSecondary).
   static const TextStyle infoCardTitle = TextStyle(
@@ -253,18 +249,18 @@ class AppTextStyles {
     color: AppColors.textSecondary,
   );
 
-  /// Information card value text style (22px, semi-bold, textPrimary).
+  /// Information card value text style (18px, medium, textPrimary).
   static const TextStyle infoCardValue = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 22.0,
-    fontWeight: FontWeight.w600,
+    fontSize: 18.0,
+    fontWeight: FontWeight.w500,
     color: AppColors.textPrimary,
   );
 
-  /// Information card unit text style (13px, regular, textSecondary).
+  /// Information card unit text style (12px, regular, textSecondary).
   static const TextStyle infoCardUnit = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 13.0,
+    fontSize: 12.0,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,
   );
@@ -278,11 +274,11 @@ class AppTextStyles {
     color: AppColors.textSecondary,
   );
 
-  /// Health score status text style (18px, medium, textPrimary).
+  /// Health score status text style (18px, semi-bold, textPrimary).
   static const TextStyle healthStatus = TextStyle(
     fontFamily: fontFamily,
     fontSize: 18.0,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
     color: AppColors.textPrimary,
   );
 

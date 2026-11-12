@@ -70,14 +70,14 @@ class AppSpacing {
   /// Gap between statistics app bar and calories summary (20px).
   static const double gapStatisticsAppBarToCalories = 20.0;
 
-  /// Gap between calories summary and bar chart (16px).
-  static const double gapCaloriesToChart = 16.0;
+  /// Gap between calories summary and bar chart (14px).
+  static const double gapCaloriesToChart = 14.0;
 
-  /// Gap between bar chart and info cards (24px).
-  static const double gapChartToInfoCards = 24.0;
+  /// Gap between bar chart and info cards (28px).
+  static const double gapChartToInfoCards = 28.0;
 
-  /// Gap between info cards and health score card (24px).
-  static const double gapInfoCardsToHealthScore = 24.0;
+  /// Gap between info cards and health score card (26px).
+  static const double gapInfoCardsToHealthScore = 26.0;
 
   // Header tokens
   /// Avatar diameter (40px).
@@ -320,35 +320,44 @@ class AppSpacing {
   /// Icon size for the more horizontal options icon in statistics app bar (20px).
   static const double moreIconSize = 20.0;
 
-  /// Width of the chart vertical bars (12px).
-  static const double chartBarWidth = 12.0;
+  /// Width of the chart vertical bars (10px).
+  static const double chartBarWidth = 10.0;
 
-  /// Height of the chart vertical bars (155px).
-  static const double chartBarHeight = 155.0;
+  /// Height of the chart vertical bars (120px).
+  static const double chartBarHeight = 120.0;
 
-  /// Corner radius for chart bars (6px).
-  static const double chartBarRadius = 6.0;
+  /// Corner radius for chart bars (5px).
+  static const double chartBarRadius = 5.0;
 
-  /// Width of each chart bar column item (48px).
-  static const double chartBarItemWidth = 48.0;
+  /// Width of each chart bar column item (46px).
+  static const double chartBarItemWidth = 46.0;
 
-  /// Height of the top area reserved for tooltip above bars (38px).
-  static const double chartTooltipAreaHeight = 38.0;
+  /// Height of the top area reserved for tooltip above bars (31px).
+  static const double chartTooltipAreaHeight = 31.0;
 
-  /// Maximum width constraint for the chart tooltip overflow box (80px).
-  static const double chartTooltipMaxWidth = 80.0;
+  /// Height of the tooltip pill bubble (31px).
+  static const double chartTooltipHeight = 31.0;
+
+  /// Gap between the bottom of tooltip and top of bar track (9px).
+  static const double gapTooltipToBar = 9.0;
+
+  /// Maximum width constraint for the chart tooltip overflow box (100px).
+  static const double chartTooltipMaxWidth = 100.0;
 
   /// Corner radius for chart tooltip pill (16px).
   static const double chartTooltipRadius = 16.0;
 
-  /// Horizontal padding inside chart tooltip pill (12px).
-  static const double chartTooltipPaddingHorizontal = 12.0;
+  /// Horizontal padding inside chart tooltip pill (20px).
+  static const double chartTooltipPaddingHorizontal = 20.0;
 
   /// Vertical padding inside chart tooltip pill (6px).
   static const double chartTooltipPaddingVertical = 6.0;
 
-  /// Internal padding for information cards (16px).
-  static const double infoCardPadding = 16.0;
+  /// Internal padding for information cards (12px).
+  static const double infoCardPadding = 12.0;
+
+  /// Top padding inside information cards so ring icon sits 14px from top (14px).
+  static const double infoCardPaddingTop = 14.0;
 
   /// Height of the information cards (130px).
   static const double infoCardHeight = 130.0;
@@ -356,12 +365,21 @@ class AppSpacing {
   /// Corner radius for information cards (24px).
   static const double infoCardRadius = 24.0;
 
-  /// Ring icon image size inside information cards (44px).
-  static const double infoCardIconSize = 44.0;
+  /// Ring icon image size inside information cards (48px).
+  static const double infoCardIconSize = 48.0;
 
   // Health score card tokens
   /// Internal padding for the health score card (16px).
   static const double healthCardPadding = 16.0;
+
+  /// Horizontal and top padding for the health score card (14px).
+  static const double healthCardPaddingHorizontal = 14.0;
+
+  /// Top padding for the health score card (14px).
+  static const double healthCardPaddingTop = 14.0;
+
+  /// Bottom padding for the health score card (8px).
+  static const double healthCardPaddingBottom = 8.0;
 
   /// Corner radius for the health score card (24px).
   static const double healthCardRadius = 24.0;
@@ -378,6 +396,6 @@ class AppSpacing {
   /// Size of each health metric icon (18px).
   static const double metricIconSize = 18.0;
 
-  /// Diameter of the health metric status dot (6px).
-  static const double statusDotSize = 6.0;
+  /// Diameter of the health metric status dot (5px).
+  static const double statusDotSize = 5.0;
 }

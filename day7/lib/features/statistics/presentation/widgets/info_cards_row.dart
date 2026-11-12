@@ -20,7 +20,7 @@ class InfoCardsRow extends StatelessWidget {
             iconPath: 'assets/images/steps.png',
           ),
         ),
-        SizedBox(width: AppSpacing.gap16),
+        SizedBox(width: AppSpacing.gap12),
         Expanded(
           child: InfoCard(
             title: 'Water',

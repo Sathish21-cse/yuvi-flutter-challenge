@@ -16,6 +16,9 @@ class AppColors {
   /// Primary body and title text color - near-black (#1A1A1A).
   static const Color textPrimary = Color(0xFF1A1A1A);
 
+  /// Pure black color used for app bar titles (#000000).
+  static const Color black = Color(0xFF000000);
+
   /// Secondary descriptive text and subtitle color - grey (#6B6B6B).
   static const Color textSecondary = Color(0xFF6B6B6B);
 
@@ -132,18 +135,18 @@ class AppColors {
   static const Color infoCardBackground = surfaceWhite;
 
   // Health score card colors
-  /// Dark green active arc color for the health score ring (#4E7743).
-  static const Color healthRingArc = Color(0xFF4E7743);
+  /// Dark green active arc color for the health score ring (#4A7C3C).
+  static const Color healthRingArc = Color(0xFF4A7C3C);
 
-  /// Very light green track color for the health score ring (#D5F6CB).
-  static const Color healthRingTrack = Color(0xFFD5F6CB);
+  /// Very light green track color for the health score ring (#D0F9BD).
+  static const Color healthRingTrack = Color(0xFFD0F9BD);
 
-  /// Red status dot color for health metrics (#A84252).
-  static const Color statusRed = Color(0xFFA84252);
+  /// Bright red status dot color for health metrics (#D5354F).
+  static const Color statusRed = Color(0xFFD5354F);
 
-  /// Green status dot color for health metrics (#54764B).
-  static const Color statusGreen = Color(0xFF54764B);
+  /// Green status dot color for health metrics (#4C7C42).
+  static const Color statusGreen = Color(0xFF4C7C42);
 
-  /// Grey text color for health metric labels and values (#666666).
-  static const Color metricText = Color(0xFF666666);
+  /// Grey text color for health metric labels and values (#5A5A5A).
+  static const Color metricText = Color(0xFF5A5A5A);
 }

@@ -31,7 +31,12 @@ class InfoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: AppSpacing.infoCardHeight,
-      padding: const EdgeInsets.all(AppSpacing.infoCardPadding),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.infoCardPadding,
+        AppSpacing.infoCardPaddingTop,
+        AppSpacing.infoCardPadding,
+        AppSpacing.infoCardPadding,
+      ),
       decoration: const BoxDecoration(
         color: AppColors.infoCardBackground,
         borderRadius: BorderRadius.all(

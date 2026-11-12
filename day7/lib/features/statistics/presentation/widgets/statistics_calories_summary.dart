@@ -46,7 +46,7 @@ class StatisticsCaloriesSummary extends StatelessWidget {
       textBaseline: TextBaseline.alphabetic,
       children: [
         Text(calories, style: AppTextStyles.statisticsCaloriesValue),
-        const SizedBox(width: AppSpacing.gap4),
+        const SizedBox(width: AppSpacing.gap2),
         const Text('Kcal', style: AppTextStyles.statisticsCaloriesUnit),
       ],
     );
@@ -55,6 +55,7 @@ class StatisticsCaloriesSummary extends StatelessWidget {
   Widget _buildTargetValue() {
     return Text.rich(
       TextSpan(
+        style: AppTextStyles.statisticsTargetLabel,
         children: [
           const TextSpan(
             text: 'Target: ',

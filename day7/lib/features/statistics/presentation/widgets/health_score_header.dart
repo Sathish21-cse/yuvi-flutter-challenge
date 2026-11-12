@@ -14,7 +14,7 @@ class HealthScoreHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: [_buildTitleColumn(), const HealthScoreRing(progress: 0.7)],
+      children: [_buildTitleColumn(), const HealthScoreRing(progress: 0.75)],
     );
   }
 

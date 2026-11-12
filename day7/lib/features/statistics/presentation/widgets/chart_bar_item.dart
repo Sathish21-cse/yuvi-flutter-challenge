@@ -36,8 +36,9 @@ class ChartBarItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           _buildTooltipArea(),
+          const SizedBox(height: AppSpacing.gapTooltipToBar),
           ChartBar(heightFactor: barHeightFactor, isSelected: isSelected),
-          const SizedBox(height: AppSpacing.gap12),
+          const SizedBox(height: AppSpacing.gap4),
           _buildDayLabel(),
         ],
       ),
@@ -46,10 +47,10 @@ class ChartBarItem extends StatelessWidget {
 
   Widget _buildTooltipArea() {
     if (!isSelected) {
-      return const SizedBox(height: AppSpacing.chartTooltipAreaHeight);
+      return const SizedBox(height: AppSpacing.chartTooltipHeight);
     }
     return SizedBox(
-      height: AppSpacing.chartTooltipAreaHeight,
+      height: AppSpacing.chartTooltipHeight,
       child: _buildTooltipPill(),
     );
   }
@@ -66,11 +67,6 @@ class ChartBarItem extends StatelessWidget {
   }
 
   Widget _buildDayLabel() {
-    return Text(
-      dayLabel,
-      style: isSelected
-          ? AppTextStyles.chartDayLabelSelected
-          : AppTextStyles.chartDayLabel,
-    );
+    return Text(dayLabel, style: AppTextStyles.chartDayLabel);
   }
 }

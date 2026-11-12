@@ -15,10 +15,11 @@ class ChartTooltip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: AppSpacing.chartTooltipHeight,
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpacing.chartTooltipPaddingHorizontal,
-        vertical: AppSpacing.chartTooltipPaddingVertical,
       ),
+      alignment: Alignment.center,
       decoration: const BoxDecoration(
         color: AppColors.tooltipBackground,
         borderRadius: BorderRadius.all(
@@ -29,6 +30,8 @@ class ChartTooltip extends StatelessWidget {
         text,
         style: AppTextStyles.tooltipText,
         textAlign: TextAlign.center,
+        maxLines: 1,
+        softWrap: false,
       ),
     );
   }

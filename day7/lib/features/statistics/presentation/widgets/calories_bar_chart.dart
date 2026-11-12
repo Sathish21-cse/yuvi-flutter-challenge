@@ -23,10 +23,10 @@ class CaloriesBarChart extends StatelessWidget {
     0.30,
     0.89,
     0.47,
-    0.59,
+    0.60,
     0.39,
     0.71,
-    0.82,
+    0.83,
   ];
 
   /// Index of the currently selected day (Monday).
@@ -38,7 +38,7 @@ class CaloriesBarChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: _buildBarItems(),
     );

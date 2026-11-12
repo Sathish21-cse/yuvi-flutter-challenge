@@ -14,7 +14,12 @@ class HealthScoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(AppSpacing.healthCardPadding),
+      padding: const EdgeInsets.only(
+        left: AppSpacing.healthCardPaddingHorizontal,
+        right: AppSpacing.healthCardPaddingHorizontal,
+        top: AppSpacing.healthCardPaddingTop,
+        bottom: AppSpacing.healthCardPaddingBottom,
+      ),
       decoration: const BoxDecoration(
         color: AppColors.surfaceWhite,
         borderRadius: BorderRadius.all(
@@ -30,7 +35,7 @@ class HealthScoreCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         HealthScoreHeader(),
-        SizedBox(height: AppSpacing.gap12),
+        SizedBox(height: AppSpacing.gap10),
         HealthMetricRow(
           iconPath: 'assets/images/fiber_icon.png',
           label: 'Fiber',
